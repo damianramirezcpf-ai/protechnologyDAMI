@@ -1,0 +1,8 @@
+FOTOS REALES DE EQUIPOS EN VENTA
+================================
+1. Guarda aquí las fotos de tus equipos (JPG o PNG, de preferencia de menos de 500 KB cada una).
+   Ejemplo: Fotos-Venta/samsung-a14.jpg
+2. Abre el archivo equipos.js (en la carpeta principal) y agrega una línea por equipo:
+   { foto: "Fotos-Venta/samsung-a14.jpg", titulo: "Samsung A14 128 GB", detalle: "Excelente estado, con cargador y garantía", precio: "$420.000", categoria: "celulares" },
+3. Borra las líneas de ejemplo que tienen  ejemplo: true.
+4. Guarda y recarga la página Compra y Venta.

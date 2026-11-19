@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTecHnology - Compra y Venta</title>
+  <link rel="icon" href="Imagenes/icono.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="topbar">
+    📍 Cra 61B #51A-39, Bogotá &nbsp;|&nbsp; 🕗 Lun-Sáb 8:00 a.m. - 7:00 p.m. &nbsp;|&nbsp;
+    <a href="https://wa.me/573213184454">WhatsApp 321 318 4454</a>
+  </div>
+
+  <div class="marca">
+    <img src="Imagenes/icono.svg" alt="Logo ProTecHnology">
+    <span>ProTecHnology<small>SERVICIO TÉCNICO ESPECIALIZADO</small></span>
+  </div>
+
+  <!-- Banners automáticos -->
+  <div class="slideshow-container" id="banner-slideshow">
+    <img src="Imagenes/banner1.svg" class="slides active" alt="ProTecHnology servicio técnico">
+    <img src="Imagenes/banner2.svg" class="slides" alt="Reparación de celulares">
+    <img src="Imagenes/banner3.svg" class="slides" alt="Reparación de TV y computadores">
+    <img src="Imagenes/banner4.svg" class="slides" alt="Repuestos y accesorios">
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="Servicios.html">Servicios</a></li>
+      <li><a href="Repuestos.html">Repuestos</a></li>
+      <li><a href="Accesorios.html">Accesorios</a></li>
+      <li><a href="Venta.html" class="activo">Compra y Venta</a></li>
+      <li><a href="Catalogo.html">Catálogo</a></li>
+      <li><a href="Estado.html">Mi reparación</a></li>
+      <li><a href="Quienes_Somos.html">Quiénes Somos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+
+  <h1>Compra y venta</h1>
+  <p class="sub">Vendemos celulares, televisores y computadores nuevos y usados, y también compramos tu equipo. El inventario cambia a diario: escríbenos para confirmar disponibilidad.</p>
+
+  <div class="gallery-buttons filtros">
+    <button class="active" onclick="filtrar('todos',this)">Todos</button>
+    <button onclick="filtrar('celulares',this)">Celulares</button>
+    <button onclick="filtrar('televisores',this)">Televisores</button>
+    <button onclick="filtrar('computadores',this)">Computadores</button>
+  </div>
+
+  <div class="contenedor grid">
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/venta-cel1.svg" alt="Celular gama media">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Celular gama media</h3>
+          <p>Equipos de gama media en buen estado, con pantalla y batería revisadas. Varios modelos y colores.</p>
+          <div class="precio">Desde $350.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/venta-cel2.svg" alt="Celular reacondicionado">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Celular reacondicionado</h3>
+          <p>Revisados por nuestros técnicos, con cambio de piezas desgastadas y garantía.</p>
+          <div class="precio">Desde $300.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/venta-cel3.svg" alt="Celular de segunda mano">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Celular de segunda mano</h3>
+          <p>Opciones económicas para estudio, trabajo o primer celular.</p>
+          <div class="precio">Desde $200.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/venta-cel4.svg" alt="Celular económico">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Celular económico</h3>
+          <p>Equipos básicos y duraderos: llamadas, WhatsApp y redes sociales.</p>
+          <div class="precio">Desde $150.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/venta-cel5.svg" alt="Celular nuevo">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Celular nuevo</h3>
+          <p>Equipos nuevos sellados con garantía. Consulta marcas y modelos disponibles.</p>
+          <div class="precio">Consultar</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/venta-cel6.svg" alt="Celular con garantía">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Celular con garantía</h3>
+          <p>Todos los celulares usados se entregan con garantía por escrito.</p>
+          <div class="precio">Desde $250.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="televisores">
+        <img src="Imagenes/venta-tv.svg" alt="Televisores nuevos y usados">
+        <div class="cuerpo">
+          <span class="etiqueta">Televisores</span>
+          <h3>Televisores nuevos y usados</h3>
+          <p>Smart TV y LED de varios tamaños, probados y con garantía. Instalamos el soporte.</p>
+          <div class="precio">Desde $400.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computadores">
+        <img src="Imagenes/venta-pc.svg" alt="Portátiles y computadores">
+        <div class="cuerpo">
+          <span class="etiqueta">Computadores</span>
+          <h3>Portátiles y computadores</h3>
+          <p>Portátiles y de escritorio nuevos y usados, listos para usar y con Windows instalado.</p>
+          <div class="precio">Desde $700.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computadores">
+        <img src="Imagenes/armado-pc.svg" alt="Computador armado a la medida">
+        <div class="cuerpo">
+          <span class="etiqueta">Computadores</span>
+          <h3>Computador armado a la medida</h3>
+          <p>Arma el tuyo según tu presupuesto y uso. Consulta la página de Servicios.</p>
+          <div class="precio">Cotización gratis</div>
+        </div>
+      </div>
+  </div>
+
+  <h2>Equipos disponibles ahora</h2>
+  <p class="sub">Fotos de los equipos que tenemos en el local. Toca una foto para verla en grande.</p>
+  <div class="contenedor grid" id="galeria-equipos"></div>
+
+  <div class="contenedor">
+    <div class="dos-col">
+      <div class="caja"><h3>¿Quieres vender tu equipo?</h3><p>Compramos celulares, televisores y computadores usados. Revisamos tu equipo, te damos un precio justo y pagamos en el momento si llegamos a un acuerdo. Lleva tu documento de identidad.</p></div>
+      <div class="caja"><h3>Qué incluye tu compra</h3><p>• Equipo revisado y probado por nuestros técnicos.<br>• Garantía por escrito.<br>• Soporte y reparación en el mismo local.<br>• Formateo y configuración inicial en celulares y computadores.</p></div>
+    </div>
+    <p class="nota">* Los precios son de referencia y cambian según el estado, el modelo y el inventario del momento. Las imágenes son ilustrativas.</p>
+  </div>
+
+  <div class="franja">
+    <h2>¿Buscas un equipo en particular?</h2>
+    <p>Dinos qué necesitas y tu presupuesto, y te mostramos las mejores opciones disponibles.</p>
+    <a class="boton" href="https://wa.me/573213184454" target="_blank">Preguntar por WhatsApp</a>
+  </div>
+
+
+  <a class="wa" href="https://wa.me/573213184454" target="_blank">💬 Escríbenos</a>
+
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank"><b>@stiv_enramirez</b></a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/stiv_enramirez/" target="_blank" title="Instagram @stiv_enramirez">ig</a>
+      <a href="https://wa.me/573213184454" target="_blank" title="WhatsApp">wa</a>
+    </div>
+    <p>
+      &copy; 2026 - Educación Media del Colegio Venecia IED. Todos los derechos reservados. |
+      <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso">Política de Privacidad</a> |
+      <a href="https://www.sic.gov.co/politica-privacidad">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+<script src="equipos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTecHnology - Contacto</title>
+  <link rel="icon" href="Imagenes/icono.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="topbar">
+    📍 Cra 61B #51A-39, Bogotá &nbsp;|&nbsp; 🕗 Lun-Sáb 8:00 a.m. - 7:00 p.m. &nbsp;|&nbsp;
+    <a href="https://wa.me/573213184454">WhatsApp 321 318 4454</a>
+  </div>
+
+  <div class="marca">
+    <img src="Imagenes/icono.svg" alt="Logo ProTecHnology">
+    <span>ProTecHnology<small>SERVICIO TÉCNICO ESPECIALIZADO</small></span>
+  </div>
+
+  <!-- Banners automáticos -->
+  <div class="slideshow-container" id="banner-slideshow">
+    <img src="Imagenes/banner1.svg" class="slides active" alt="ProTecHnology servicio técnico">
+    <img src="Imagenes/banner2.svg" class="slides" alt="Reparación de celulares">
+    <img src="Imagenes/banner3.svg" class="slides" alt="Reparación de TV y computadores">
+    <img src="Imagenes/banner4.svg" class="slides" alt="Repuestos y accesorios">
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="Servicios.html">Servicios</a></li>
+      <li><a href="Repuestos.html">Repuestos</a></li>
+      <li><a href="Accesorios.html">Accesorios</a></li>
+      <li><a href="Venta.html">Compra y Venta</a></li>
+      <li><a href="Catalogo.html">Catálogo</a></li>
+      <li><a href="Estado.html">Mi reparación</a></li>
+      <li><a href="Quienes_Somos.html">Quiénes Somos</a></li>
+      <li><a href="Contacto.html" class="activo">Contacto</a></li>
+    </ul>
+  </div>
+
+
+  <h1>Contacto</h1>
+  <p class="sub">Visítanos, llámanos o cuéntanos tu caso por WhatsApp. ¡Con gusto te ayudamos!</p>
+
+  <div class="contenedor info-contacto">
+    <div class="dato"><h3>📍 Dirección</h3><p>Cra 61B #51A-39</p><p>Bogotá, Colombia</p></div>
+    <div class="dato"><h3>🕗 Horario</h3><p>Lunes a viernes: 8:00 a.m. - 7:00 p.m.</p><p>Sábados: 8:00 a.m. - 5:00 p.m.</p><p>Domingos y festivos: cerrado</p></div>
+    <div class="dato"><h3>📞 Teléfonos</h3><p>WhatsApp: 321 318 4454</p><p>Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank">@stiv_enramirez</a></p></div>
+  </div>
+
+  <div class="contenedor dos-col">
+    <form onsubmit="enviarWhatsApp(event)">
+      <h3>Cuéntanos qué le pasa a tu equipo</h3>
+      <label for="nombre">Tu nombre</label>
+      <input id="nombre" name="nombre" type="text" required>
+      <label for="equipo">Tipo de equipo</label>
+      <select id="equipo" name="equipo">
+        <option>Celular</option><option>Televisor</option><option>Computador / portátil</option><option>Consola / tablet</option><option>Otro</option>
+      </select>
+      <label for="modelo">Marca y modelo</label>
+      <input id="modelo" name="modelo" type="text" placeholder="Ej: Samsung A14" required>
+      <label for="falla">¿Qué falla presenta?</label>
+      <textarea id="falla" name="falla" rows="4" required></textarea>
+      <p style="text-align:center"><button class="boton" type="submit">Enviar por WhatsApp</button></p>
+    </form>
+
+    <div>
+      <div class="mapa"><a class="boton" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Cra+61B+%2351A-39+Bogot%C3%A1+Colombia">📍 Ver ubicación en Google Maps</a></div>
+      <h3 style="margin-top:20px">Preguntas frecuentes</h3>
+      <details><summary>¿Cobran por el diagnóstico?</summary><p>No. Si decides reparar con nosotros, el diagnóstico es gratis. Si no, se cobra un valor simbólico.</p></details>
+      <details><summary>¿Cuánto dura la garantía?</summary><p>Hasta 3 meses sobre el repuesto y la mano de obra. No cubre golpes, humedad ni mal uso posterior.</p></details>
+      <details><summary>¿Qué pasa si no se puede reparar?</summary><p>No pagas la reparación. Te devolvemos el equipo tal como llegó.</p></details>
+      <details><summary>¿Puedo pasar a recoger el mismo día?</summary><p>Muchas reparaciones de celular (pantalla, batería, pin de carga) quedan listas el mismo día.</p></details>
+    </div>
+  </div>
+
+
+  <a class="wa" href="https://wa.me/573213184454" target="_blank">💬 Escríbenos</a>
+
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank"><b>@stiv_enramirez</b></a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/stiv_enramirez/" target="_blank" title="Instagram @stiv_enramirez">ig</a>
+      <a href="https://wa.me/573213184454" target="_blank" title="WhatsApp">wa</a>
+    </div>
+    <p>
+      &copy; 2026 - Educación Media del Colegio Venecia IED. Todos los derechos reservados. |
+      <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso">Política de Privacidad</a> |
+      <a href="https://www.sic.gov.co/politica-privacidad">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

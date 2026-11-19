@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTecHnology - Repuestos</title>
+  <link rel="icon" href="Imagenes/icono.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="topbar">
+    📍 Cra 61B #51A-39, Bogotá &nbsp;|&nbsp; 🕗 Lun-Sáb 8:00 a.m. - 7:00 p.m. &nbsp;|&nbsp;
+    <a href="https://wa.me/573213184454">WhatsApp 321 318 4454</a>
+  </div>
+
+  <div class="marca">
+    <img src="Imagenes/icono.svg" alt="Logo ProTecHnology">
+    <span>ProTecHnology<small>SERVICIO TÉCNICO ESPECIALIZADO</small></span>
+  </div>
+
+  <!-- Banners automáticos -->
+  <div class="slideshow-container" id="banner-slideshow">
+    <img src="Imagenes/banner1.svg" class="slides active" alt="ProTecHnology servicio técnico">
+    <img src="Imagenes/banner2.svg" class="slides" alt="Reparación de celulares">
+    <img src="Imagenes/banner3.svg" class="slides" alt="Reparación de TV y computadores">
+    <img src="Imagenes/banner4.svg" class="slides" alt="Repuestos y accesorios">
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="Servicios.html">Servicios</a></li>
+      <li><a href="Repuestos.html" class="activo">Repuestos</a></li>
+      <li><a href="Accesorios.html">Accesorios</a></li>
+      <li><a href="Venta.html">Compra y Venta</a></li>
+      <li><a href="Catalogo.html">Catálogo</a></li>
+      <li><a href="Estado.html">Mi reparación</a></li>
+      <li><a href="Quienes_Somos.html">Quiénes Somos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+
+  <h1>Repuestos para cada dispositivo</h1>
+  <p class="sub">Si no encuentras la referencia de tu equipo, envíanos el modelo por WhatsApp y la conseguimos.</p>
+
+  <div class="gallery-buttons filtros">
+    <button class="active" onclick="filtrar('todos',this)">Todos</button>
+    <button onclick="filtrar('celulares',this)">Celulares</button>
+    <button onclick="filtrar('televisores',this)">Televisores</button>
+    <button onclick="filtrar('computadores',this)">Computadores</button>
+    <button onclick="filtrar('otros',this)">Otros</button>
+  </div>
+
+  <div class="contenedor grid">
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/pantalla.svg" alt="Pantallas para celular">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Pantallas para celular</h3>
+          <p>Módulos completos (display + táctil) para Samsung, Xiaomi, Motorola, iPhone y más.</p>
+          <div class="precio">Desde $70.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/bateria.svg" alt="Baterías para celular">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Baterías para celular</h3>
+          <p>Baterías de reemplazo con capacidad certificada y garantía.</p>
+          <div class="precio">Desde $35.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/pin-carga.svg" alt="Pines y flex de carga">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Pines y flex de carga</h3>
+          <p>Puertos USB-C, micro USB y Lightning con flex de repuesto.</p>
+          <div class="precio">Desde $20.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="televisores">
+        <img src="Imagenes/placa.svg" alt="Tarjeta principal de TV">
+        <div class="cuerpo">
+          <span class="etiqueta">Televisores</span>
+          <h3>Tarjeta principal de TV</h3>
+          <p>Main board, T-CON y fuentes para televisores de varias marcas.</p>
+          <div class="precio">Desde $90.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="televisores">
+        <img src="Imagenes/tv-repuestos.svg" alt="Tiras LED para TV">
+        <div class="cuerpo">
+          <span class="etiqueta">Televisores</span>
+          <h3>Tiras LED para TV</h3>
+          <p>Kits de backlight según tamaño y referencia de tu televisor.</p>
+          <div class="precio">Desde $60.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computadores">
+        <img src="Imagenes/disco-ssd.svg" alt="Discos SSD y RAM">
+        <div class="cuerpo">
+          <span class="etiqueta">Computadores</span>
+          <h3>Discos SSD y RAM</h3>
+          <p>SSD SATA y NVMe, memorias RAM DDR4 y DDR5 para portátil y escritorio.</p>
+          <div class="precio">Desde $85.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computadores">
+        <img src="Imagenes/teclado-pc.svg" alt="Teclados de portátil">
+        <div class="cuerpo">
+          <span class="etiqueta">Computadores</span>
+          <h3>Teclados de portátil</h3>
+          <p>Teclados en español para las marcas más comunes de portátiles.</p>
+          <div class="precio">Desde $45.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computadores">
+        <img src="Imagenes/cargador.svg" alt="Cargadores de portátil">
+        <div class="cuerpo">
+          <span class="etiqueta">Computadores</span>
+          <h3>Cargadores de portátil</h3>
+          <p>Cargadores compatibles con conector y voltaje exacto de tu equipo.</p>
+          <div class="precio">Desde $50.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="otros">
+        <img src="Imagenes/control.svg" alt="Controles y piezas de consola">
+        <div class="cuerpo">
+          <span class="etiqueta">Otros</span>
+          <h3>Controles y piezas de consola</h3>
+          <p>Palancas, botones, cables HDMI y fuentes para consolas.</p>
+          <div class="precio">Desde $20.000</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="contenedor">
+    <div class="caja">
+      <h3>Antes de comprar un repuesto</h3>
+      <p>• Indícanos la <b>marca y el modelo exacto</b> (en celulares está en Ajustes &gt; Acerca del teléfono; en TV, en la etiqueta trasera).<br>
+         • Los repuestos instalados en nuestro local incluyen garantía.<br>
+         • Los precios son de referencia y pueden variar según disponibilidad y calidad (original o alternativo).</p>
+    </div>
+  </div>
+
+
+  <a class="wa" href="https://wa.me/573213184454" target="_blank">💬 Escríbenos</a>
+
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank"><b>@stiv_enramirez</b></a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/stiv_enramirez/" target="_blank" title="Instagram @stiv_enramirez">ig</a>
+      <a href="https://wa.me/573213184454" target="_blank" title="WhatsApp">wa</a>
+    </div>
+    <p>
+      &copy; 2026 - Educación Media del Colegio Venecia IED. Todos los derechos reservados. |
+      <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso">Política de Privacidad</a> |
+      <a href="https://www.sic.gov.co/politica-privacidad">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

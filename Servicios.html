@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTecHnology - Servicios</title>
+  <link rel="icon" href="Imagenes/icono.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="topbar">
+    📍 Cra 61B #51A-39, Bogotá &nbsp;|&nbsp; 🕗 Lun-Sáb 8:00 a.m. - 7:00 p.m. &nbsp;|&nbsp;
+    <a href="https://wa.me/573213184454">WhatsApp 321 318 4454</a>
+  </div>
+
+  <div class="marca">
+    <img src="Imagenes/icono.svg" alt="Logo ProTecHnology">
+    <span>ProTecHnology<small>SERVICIO TÉCNICO ESPECIALIZADO</small></span>
+  </div>
+
+  <!-- Banners automáticos -->
+  <div class="slideshow-container" id="banner-slideshow">
+    <img src="Imagenes/banner1.svg" class="slides active" alt="ProTecHnology servicio técnico">
+    <img src="Imagenes/banner2.svg" class="slides" alt="Reparación de celulares">
+    <img src="Imagenes/banner3.svg" class="slides" alt="Reparación de TV y computadores">
+    <img src="Imagenes/banner4.svg" class="slides" alt="Repuestos y accesorios">
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="Servicios.html" class="activo">Servicios</a></li>
+      <li><a href="Repuestos.html">Repuestos</a></li>
+      <li><a href="Accesorios.html">Accesorios</a></li>
+      <li><a href="Venta.html">Compra y Venta</a></li>
+      <li><a href="Catalogo.html">Catálogo</a></li>
+      <li><a href="Estado.html">Mi reparación</a></li>
+      <li><a href="Quienes_Somos.html">Quiénes Somos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+
+  <h1>Nuestros servicios</h1>
+  <p class="sub">Elige el tipo de equipo para ver lo que reparamos, los tiempos y los valores de referencia.</p>
+
+  <div class="gallery-buttons tabs">
+    <button class="active" onclick="mostrarPanel(0)">Celulares</button>
+    <button onclick="mostrarPanel(1)">Televisores</button>
+    <button onclick="mostrarPanel(2)">Computadores</button>
+    <button onclick="mostrarPanel(3)">Otros arreglos</button>
+    <button onclick="mostrarPanel(4)">Armado de PCs</button>
+  </div>
+
+  <div class="contenedor">
+    <div class="panel active">
+      <div class="panel-flex">
+        <img src="Imagenes/celular-reparacion.svg" alt="Reparación de celulares">
+        <div>
+          <h2 style="text-align:left;margin-top:0">Reparación de celulares</h2>
+          <p style="text-align:left">Todas las marcas: Samsung, Xiaomi, Motorola, iPhone, Huawei, Honor y más.</p>
+        <table>
+          <tr><th>Servicio</th><th>Tiempo estimado</th><th>Valor de referencia</th></tr>
+          <tr><td>Cambio de pantalla</td><td>1 a 3 horas</td><td>Desde $90.000</td></tr>
+          <tr><td>Cambio de batería</td><td>30 a 60 minutos</td><td>Desde $50.000</td></tr>
+          <tr><td>Cambio de pin / puerto de carga</td><td>1 a 2 horas</td><td>Desde $40.000</td></tr>
+          <tr><td>Reparación por humedad o agua</td><td>1 a 3 días</td><td>Desde $70.000</td></tr>
+          <tr><td>Software, actualización o desbloqueo de cuenta</td><td>1 a 2 horas</td><td>Desde $40.000</td></tr>
+          <tr><td>Cambio de cámara, altavoz o micrófono</td><td>1 a 2 horas</td><td>Desde $45.000</td></tr>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-flex">
+        <img src="Imagenes/tv-reparacion.svg" alt="Reparación de televisores">
+        <div>
+          <h2 style="text-align:left;margin-top:0">Reparación de televisores</h2>
+          <p style="text-align:left">LED, LCD, OLED y Smart TV de todas las marcas y tamaños.</p>
+        <table>
+          <tr><th>Servicio</th><th>Tiempo estimado</th><th>Valor de referencia</th></tr>
+          <tr><td>Revisión y diagnóstico</td><td>Mismo día</td><td>Gratis con reparación</td></tr>
+          <tr><td>Cambio de tira LED (backlight)</td><td>1 a 2 días</td><td>Desde $150.000</td></tr>
+          <tr><td>Cambio de fuente de poder</td><td>1 a 3 días</td><td>Desde $120.000</td></tr>
+          <tr><td>Cambio de tarjeta principal (main board)</td><td>2 a 5 días</td><td>Desde $180.000</td></tr>
+          <tr><td>Actualización de software / Smart TV</td><td>1 a 2 horas</td><td>Desde $60.000</td></tr>
+          <tr><td>Instalación y soporte de pared</td><td>1 hora</td><td>Desde $50.000</td></tr>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-flex">
+        <img src="Imagenes/pc-reparacion.svg" alt="Reparación de computadores">
+        <div>
+          <h2 style="text-align:left;margin-top:0">Computadores y portátiles</h2>
+          <p style="text-align:left">Mantenimiento, reparación y mejoras para equipos de escritorio y portátiles.</p>
+        <table>
+          <tr><th>Servicio</th><th>Tiempo estimado</th><th>Valor de referencia</th></tr>
+          <tr><td>Mantenimiento preventivo (limpieza y pasta térmica)</td><td>1 día</td><td>Desde $50.000</td></tr>
+          <tr><td>Formateo e instalación de Windows y programas</td><td>2 a 4 horas</td><td>Desde $60.000</td></tr>
+          <tr><td>Cambio de disco duro por SSD</td><td>1 a 2 horas</td><td>Desde $40.000 + disco</td></tr>
+          <tr><td>Ampliación de memoria RAM</td><td>30 minutos</td><td>Desde $25.000 + memoria</td></tr>
+          <tr><td>Cambio de pantalla de portátil</td><td>1 a 2 días</td><td>Desde $90.000 + pantalla</td></tr>
+          <tr><td>Eliminación de virus y recuperación de datos</td><td>1 a 3 días</td><td>Desde $60.000</td></tr>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-flex">
+        <img src="Imagenes/otros-reparacion.svg" alt="Otros arreglos">
+        <div>
+          <h2 style="text-align:left;margin-top:0">Otros arreglos en general</h2>
+          <p style="text-align:left">Si no ves tu equipo en la lista, pregúntanos: muchas veces podemos ayudarte.</p>
+        <table>
+          <tr><th>Servicio</th><th>Tiempo estimado</th><th>Valor de referencia</th></tr>
+          <tr><td>Consolas de videojuegos (limpieza, HDMI, controles)</td><td>1 a 3 días</td><td>Desde $60.000</td></tr>
+          <tr><td>Tablets (pantalla, batería, carga)</td><td>1 a 3 horas</td><td>Desde $60.000</td></tr>
+          <tr><td>Parlantes y audífonos</td><td>1 a 2 días</td><td>Desde $25.000</td></tr>
+          <tr><td>Routers, módems y televisores decodificadores</td><td>1 día</td><td>Desde $30.000</td></tr>
+          <tr><td>Cargadores y cables</td><td>Mismo día</td><td>Desde $15.000</td></tr>
+          <tr><td>Pequeños electrodomésticos (licuadoras, planchas)</td><td>1 a 3 días</td><td>Cotización gratis</td></tr>
+        </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="panel-flex">
+        <img src="Imagenes/armado-pc.svg" alt="Armado de computadores">
+        <div>
+          <h2 style="text-align:left;margin-top:0">Armado de computadores</h2>
+          <p style="text-align:left">Armamos tu computador a la medida: te asesoramos con los componentes según tu presupuesto y tu uso, ensamblamos, instalamos Windows y los programas, y probamos todo antes de entregarlo.</p>
+        <table>
+          <tr><th>Servicio</th><th>Tiempo estimado</th><th>Valor de referencia</th></tr>
+          <tr><td>Asesoría y cotización de componentes</td><td>Mismo día</td><td>Gratis</td></tr>
+          <tr><td>Armado y ensamble (mano de obra)</td><td>1 día</td><td>Desde $60.000</td></tr>
+          <tr><td>Instalación de Windows, drivers y programas</td><td>2 a 3 horas</td><td>Desde $50.000</td></tr>
+          <tr><td>Organización de cables y ventilación</td><td>1 hora</td><td>Desde $20.000</td></tr>
+          <tr><td>Pruebas de temperatura y rendimiento</td><td>1 a 2 horas</td><td>Incluido en el armado</td></tr>
+          <tr><td>Actualización de equipos armados (GPU, RAM, SSD)</td><td>1 a 2 horas</td><td>Desde $30.000 + piezas</td></tr>
+        </table>
+        </div>
+      </div>
+      <h2>Equipos recomendados</h2>
+      <p class="sub">Tres configuraciones de referencia. Podemos ajustarlas a tu presupuesto.</p>
+      <div class="grid">
+      <div class="tarjeta">
+        <img src="Imagenes/armado-oficina.svg" alt="Oficina y estudio">
+        <div class="cuerpo">
+          <span class="etiqueta">Armado</span>
+          <h3>Oficina y estudio</h3>
+          <p>Procesador de 4 a 6 núcleos, 8 a 16 GB de RAM y SSD. Ideal para trabajar y estudiar.</p>
+          <div class="precio">Desde $1.600.000</div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <img src="Imagenes/armado-gamer.svg" alt="Gamer">
+        <div class="cuerpo">
+          <span class="etiqueta">Armado</span>
+          <h3>Gamer</h3>
+          <p>Procesador de gama media, tarjeta de video dedicada, 16 GB de RAM y SSD NVMe.</p>
+          <div class="precio">Desde $2.800.000</div>
+        </div>
+      </div>
+      <div class="tarjeta">
+        <img src="Imagenes/armado-edicion.svg" alt="Diseño y edición">
+        <div class="cuerpo">
+          <span class="etiqueta">Armado</span>
+          <h3>Diseño y edición</h3>
+          <p>Más núcleos, 32 GB de RAM y almacenamiento rápido para video, diseño y 3D.</p>
+          <div class="precio">Desde $3.500.000</div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <p class="nota">* Los valores son de referencia y varían según la marca, el modelo y el repuesto. En los armados el precio depende de los componentes elegidos y su disponibilidad. El valor final se confirma después del diagnóstico y solo se repara con tu autorización.</p>
+  </div>
+
+  <div class="franja">
+    <h2>¿No encuentras tu falla?</h2>
+    <p>Cuéntanos qué le pasa a tu equipo y te damos una orientación sin compromiso.</p>
+    <a class="boton" href="Contacto.html">Contactar al técnico</a>
+  </div>
+
+
+  <a class="wa" href="https://wa.me/573213184454" target="_blank">💬 Escríbenos</a>
+
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank"><b>@stiv_enramirez</b></a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/stiv_enramirez/" target="_blank" title="Instagram @stiv_enramirez">ig</a>
+      <a href="https://wa.me/573213184454" target="_blank" title="WhatsApp">wa</a>
+    </div>
+    <p>
+      &copy; 2026 - Educación Media del Colegio Venecia IED. Todos los derechos reservados. |
+      <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso">Política de Privacidad</a> |
+      <a href="https://www.sic.gov.co/politica-privacidad">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>

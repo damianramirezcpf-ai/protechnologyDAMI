@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTecHnology - Mi reparación</title>
+  <link rel="icon" href="Imagenes/icono.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="topbar">
+    📍 Cra 61B #51A-39, Bogotá &nbsp;|&nbsp; 🕗 Lun-Sáb 8:00 a.m. - 7:00 p.m. &nbsp;|&nbsp;
+    <a href="https://wa.me/573213184454">WhatsApp 321 318 4454</a>
+  </div>
+
+  <div class="marca">
+    <img src="Imagenes/icono.svg" alt="Logo ProTecHnology">
+    <span>ProTecHnology<small>SERVICIO TÉCNICO ESPECIALIZADO</small></span>
+  </div>
+
+  <!-- Banners automáticos -->
+  <div class="slideshow-container" id="banner-slideshow">
+    <img src="Imagenes/banner1.svg" class="slides active" alt="ProTecHnology servicio técnico">
+    <img src="Imagenes/banner2.svg" class="slides" alt="Reparación de celulares">
+    <img src="Imagenes/banner3.svg" class="slides" alt="Reparación de TV y computadores">
+    <img src="Imagenes/banner4.svg" class="slides" alt="Repuestos y accesorios">
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="Servicios.html">Servicios</a></li>
+      <li><a href="Repuestos.html">Repuestos</a></li>
+      <li><a href="Accesorios.html">Accesorios</a></li>
+      <li><a href="Venta.html">Compra y Venta</a></li>
+      <li><a href="Catalogo.html">Catálogo</a></li>
+      <li><a href="Estado.html" class="activo">Mi reparación</a></li>
+      <li><a href="Quienes_Somos.html">Quiénes Somos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+
+  <h1>Estado de tu reparación</h1>
+  <p class="sub">Escribe el número de orden que aparece en tu comprobante de recepción y consulta en qué etapa va tu equipo.</p>
+
+  <div class="contenedor" style="max-width:640px">
+    <form onsubmit="buscarOrden(event)">
+      <label for="orden">Número de orden</label>
+      <input id="orden" type="text" placeholder="Ej: PT-0001" autocomplete="off" required>
+      <p style="text-align:center"><button class="boton" type="submit">Consultar</button></p>
+    </form>
+    <div id="resultado-orden"></div>
+    <p class="nota" style="text-align:center">¿No encuentras tu número? Escríbenos por <a href="https://wa.me/573213184454" target="_blank">WhatsApp</a> con el nombre y la fecha en que dejaste el equipo.</p>
+  </div>
+
+
+  <a class="wa" href="https://wa.me/573213184454" target="_blank">💬 Escríbenos</a>
+
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank"><b>@stiv_enramirez</b></a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/stiv_enramirez/" target="_blank" title="Instagram @stiv_enramirez">ig</a>
+      <a href="https://wa.me/573213184454" target="_blank" title="WhatsApp">wa</a>
+    </div>
+    <p>
+      &copy; 2026 - Educación Media del Colegio Venecia IED. Todos los derechos reservados. |
+      <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso">Política de Privacidad</a> |
+      <a href="https://www.sic.gov.co/politica-privacidad">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+<script src="ordenes.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

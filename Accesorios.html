@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProTecHnology - Accesorios</title>
+  <link rel="icon" href="Imagenes/icono.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <div class="topbar">
+    📍 Cra 61B #51A-39, Bogotá &nbsp;|&nbsp; 🕗 Lun-Sáb 8:00 a.m. - 7:00 p.m. &nbsp;|&nbsp;
+    <a href="https://wa.me/573213184454">WhatsApp 321 318 4454</a>
+  </div>
+
+  <div class="marca">
+    <img src="Imagenes/icono.svg" alt="Logo ProTecHnology">
+    <span>ProTecHnology<small>SERVICIO TÉCNICO ESPECIALIZADO</small></span>
+  </div>
+
+  <!-- Banners automáticos -->
+  <div class="slideshow-container" id="banner-slideshow">
+    <img src="Imagenes/banner1.svg" class="slides active" alt="ProTecHnology servicio técnico">
+    <img src="Imagenes/banner2.svg" class="slides" alt="Reparación de celulares">
+    <img src="Imagenes/banner3.svg" class="slides" alt="Reparación de TV y computadores">
+    <img src="Imagenes/banner4.svg" class="slides" alt="Repuestos y accesorios">
+  </div>
+
+  <!-- Menú -->
+  <div class="menu">
+    <ul>
+      <li><a href="inicio.html">Inicio</a></li>
+      <li><a href="Servicios.html">Servicios</a></li>
+      <li><a href="Repuestos.html">Repuestos</a></li>
+      <li><a href="Accesorios.html" class="activo">Accesorios</a></li>
+      <li><a href="Venta.html">Compra y Venta</a></li>
+      <li><a href="Catalogo.html">Catálogo</a></li>
+      <li><a href="Estado.html">Mi reparación</a></li>
+      <li><a href="Quienes_Somos.html">Quiénes Somos</a></li>
+      <li><a href="Contacto.html">Contacto</a></li>
+    </ul>
+  </div>
+
+
+  <h1>Accesorios</h1>
+  <p class="sub">Todo lo que necesitas para proteger, cargar y sacarle más provecho a tus dispositivos.</p>
+
+  <div class="gallery-buttons filtros">
+    <button class="active" onclick="filtrar('todos',this)">Todos</button>
+    <button onclick="filtrar('celulares',this)">Celulares</button>
+    <button onclick="filtrar('carga',this)">Carga</button>
+    <button onclick="filtrar('audio',this)">Audio</button>
+    <button onclick="filtrar('computador',this)">Computador y TV</button>
+  </div>
+
+  <div class="contenedor grid">
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/forro.svg" alt="Fundas y forros">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Fundas y forros</h3>
+          <p>Silicona, antigolpes y transparentes para los modelos más vendidos.</p>
+          <div class="precio">Desde $15.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="celulares">
+        <img src="Imagenes/protector.svg" alt="Vidrios templados">
+        <div class="cuerpo">
+          <span class="etiqueta">Celulares</span>
+          <h3>Vidrios templados</h3>
+          <p>Protección contra rayones y golpes, con instalación incluida.</p>
+          <div class="precio">Desde $10.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="carga">
+        <img src="Imagenes/cargador.svg" alt="Cargadores de pared">
+        <div class="cuerpo">
+          <span class="etiqueta">Carga</span>
+          <h3>Cargadores de pared</h3>
+          <p>Carga rápida USB-C de 20 W a 65 W, con cable.</p>
+          <div class="precio">Desde $35.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="carga">
+        <img src="Imagenes/cable.svg" alt="Cables y adaptadores">
+        <div class="cuerpo">
+          <span class="etiqueta">Carga</span>
+          <h3>Cables y adaptadores</h3>
+          <p>USB-C, Lightning, micro USB, HDMI y adaptadores OTG.</p>
+          <div class="precio">Desde $8.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="carga">
+        <img src="Imagenes/powerbank.svg" alt="Baterías portátiles">
+        <div class="cuerpo">
+          <span class="etiqueta">Carga</span>
+          <h3>Baterías portátiles</h3>
+          <p>Power banks de 10.000 a 20.000 mAh para varias recargas.</p>
+          <div class="precio">Desde $55.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="audio">
+        <img src="Imagenes/audifonos.svg" alt="Audífonos">
+        <div class="cuerpo">
+          <span class="etiqueta">Audio</span>
+          <h3>Audífonos</h3>
+          <p>De cable y bluetooth, con micrófono y buena cancelación de ruido.</p>
+          <div class="precio">Desde $20.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="audio">
+        <img src="Imagenes/parlante.svg" alt="Parlantes Bluetooth">
+        <div class="cuerpo">
+          <span class="etiqueta">Audio</span>
+          <h3>Parlantes Bluetooth</h3>
+          <p>Portátiles, resistentes a salpicaduras y con batería de larga duración.</p>
+          <div class="precio">Desde $45.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computador">
+        <img src="Imagenes/mouse.svg" alt="Mouse y teclados">
+        <div class="cuerpo">
+          <span class="etiqueta">Computador</span>
+          <h3>Mouse y teclados</h3>
+          <p>Inalámbricos y de cable, cómodos para casa y oficina.</p>
+          <div class="precio">Desde $18.000</div>
+        </div>
+      </div>
+      <div class="tarjeta producto" data-cat="computador">
+        <img src="Imagenes/control.svg" alt="Controles de TV y consola">
+        <div class="cuerpo">
+          <span class="etiqueta">Computador</span>
+          <h3>Controles de TV y consola</h3>
+          <p>Controles universales y de reemplazo para TV, decodificador y consolas.</p>
+          <div class="precio">Desde $20.000</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="franja">
+    <h2>Compra con confianza</h2>
+    <p>Todos los accesorios se prueban antes de entregarlos y tienen garantía por defectos de fábrica.</p>
+    <a class="boton" href="https://wa.me/573213184454" target="_blank">Preguntar por disponibilidad</a>
+  </div>
+
+
+  <a class="wa" href="https://wa.me/573213184454" target="_blank">💬 Escríbenos</a>
+
+  <footer>
+    <p>Síguenos en Instagram: <a href="https://www.instagram.com/stiv_enramirez/" target="_blank"><b>@stiv_enramirez</b></a></p>
+    <div class="social-icons">
+      <a href="https://www.instagram.com/stiv_enramirez/" target="_blank" title="Instagram @stiv_enramirez">ig</a>
+      <a href="https://wa.me/573213184454" target="_blank" title="WhatsApp">wa</a>
+    </div>
+    <p>
+      &copy; 2026 - Educación Media del Colegio Venecia IED. Todos los derechos reservados. |
+      <a href="https://www.mintic.gov.co/portal/inicio/Secciones-auxiliares/Politicas/2627:Politicas-de-Privacidad-y-Condiciones-de-Uso">Política de Privacidad</a> |
+      <a href="https://www.sic.gov.co/politica-privacidad">Términos y Condiciones</a>
+    </p>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
